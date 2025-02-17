@@ -9,4 +9,4 @@ Some of the topics of this repository include:
 4. Face recognition and identification using InsightFace.
 5. Drone identification and tracking.
 
-Look forward to moroe updates!
+Look forward to more updates!
