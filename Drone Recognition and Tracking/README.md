@@ -4,4 +4,5 @@ Install poetry using pip (Run the command 'pip install poetry').
 
 Install the dependencies by running the command 'poetry install'.
 
-Execute the code file 'main.py' using this environment.
+Execute the code file 'tracker.py' using this environment.
+'tracker_video.py' can be used to feed in an input video, and get an annotated output video.
