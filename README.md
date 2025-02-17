@@ -8,5 +8,6 @@ Some of the topics of this repository include:
 3. Image classification using speed-optimized CNNs.
 4. Face recognition and identification using InsightFace.
 5. Drone identification and tracking.
+6. Invoice information extraction.
 
 Look forward to more updates!
