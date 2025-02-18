@@ -6,17 +6,18 @@ from transformers import BertTokenizer, BertModel, pipeline
 from PIL import Image
 import pytesseract
 import torch
-import io
 
-image_path_1 = "your/path/here"
-image_path_2 = "your/path/here"
+image_path_1 = r""
+image_path_2 = r""
 
 # Load the BERT model and tokenizer for text embeddings
 bert_tokenizer = BertTokenizer.from_pretrained('bert-base-uncased', local_files_only=True)
 bert_model = BertModel.from_pretrained('bert-base-uncased', local_files_only=True)
 
+device = 'cuda' if torch.cuda.is_available() else 'cpu'
+
 # Load the question-answering pipeline
-qa_pipeline = pipeline(task='question-answering', model='distilbert/distilbert-base-cased-distilled-squad')
+qa_pipeline = pipeline(task='question-answering', model='distilbert/distilbert-base-cased-distilled-squad', device=device)
 
 # Define a fixed embedding dimension (768 for BERT)
 EMBEDDING_DIM = 768
